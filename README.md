@@ -6,6 +6,9 @@ You know the problem: you're deep in Claude Code, Cursor, or Copilot, copy some 
 
 SmartTrim sits in your menu bar and fixes it automatically.
 
+<img width="267" height="281" alt="smarttrim" src="https://github.com/user-attachments/assets/a6cb98b2-2868-4bfa-a859-4c666547a1fc" />
+<img width="533" height="403" alt="smarttrim-settings" src="https://github.com/user-attachments/assets/d6b07ee4-81d4-4b2a-8622-ae4d1df12dea" />
+
 ## Features
 
 - **Auto-Trim** — Monitors clipboard, automatically cleans malformed text
