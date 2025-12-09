@@ -17,10 +17,11 @@ EXPORT_PATH="$BUILD_DIR/export"
 APP_PATH="$EXPORT_PATH/$APP_NAME.app"
 DMG_PATH="$BUILD_DIR/$APP_NAME.dmg"
 
-# Version from project.yml or default
-VERSION="${1:-1.0.0}"
+# Read version from project.yml
+VERSION=$(grep 'MARKETING_VERSION:' "$PROJECT_DIR/project.yml" | sed 's/.*: *"\(.*\)"/\1/')
+BUILD=$(grep 'CURRENT_PROJECT_VERSION:' "$PROJECT_DIR/project.yml" | sed 's/.*: *"\(.*\)"/\1/')
 
-echo "=== Building $APP_NAME v$VERSION ==="
+echo "=== Building $APP_NAME v$VERSION (build $BUILD) ==="
 
 # Clean
 rm -rf "$BUILD_DIR"
@@ -119,11 +120,15 @@ xcrun notarytool submit "$DMG_PATH" \
 
 xcrun stapler staple "$DMG_PATH"
 
+# Rename with version
+FINAL_DMG="$BUILD_DIR/${APP_NAME}-${VERSION}.dmg"
+mv "$DMG_PATH" "$FINAL_DMG"
+
 # Final output
 echo ""
 echo "=== Build Complete ==="
-echo "DMG: $DMG_PATH"
-echo "Size: $(du -h "$DMG_PATH" | cut -f1)"
+echo "DMG: $FINAL_DMG"
+echo "Size: $(du -h "$FINAL_DMG" | cut -f1)"
 echo ""
 echo "To create GitHub release:"
-echo "  gh release create v$VERSION '$DMG_PATH' --title 'v$VERSION' --notes 'Release v$VERSION'"
+echo "  gh release create v$VERSION '$FINAL_DMG' --title 'v$VERSION' --generate-notes"

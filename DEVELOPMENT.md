@@ -19,6 +19,26 @@ xcodebuild -scheme SmartTrim -configuration Debug
 xcodebuild -scheme SmartTrim -destination 'platform=macOS' test
 ```
 
+## Version
+
+Version is stored in `project.yml`:
+- `MARKETING_VERSION` — User-facing version (1.0.0)
+- `CURRENT_PROJECT_VERSION` — Build number (1, 2, 3...)
+
+### Bump version
+
+```bash
+./scripts/bump.sh patch   # 1.0.0 → 1.0.1
+./scripts/bump.sh minor   # 1.0.0 → 1.1.0
+./scripts/bump.sh major   # 1.0.0 → 2.0.0
+```
+
+Then commit:
+```bash
+git add project.yml
+git commit -m "Bump version to X.Y.Z"
+```
+
 ## Release
 
 Requires Apple Developer account with:
@@ -38,19 +58,18 @@ xcrun notarytool store-credentials "notarytool-profile" \
 ### Build signed release
 
 ```bash
-./scripts/release.sh 1.0.0
+./scripts/release.sh
 ```
 
-This will:
-1. Build universal binary (arm64 + x86_64)
-2. Sign with Developer ID + hardened runtime
-3. Notarize with Apple
-4. Staple notarization ticket
-5. Create DMG
-6. Output `gh release` command
+Reads version from `project.yml` and:
+1. Builds universal binary (arm64 + x86_64)
+2. Signs with Developer ID + hardened runtime
+3. Notarizes with Apple
+4. Staples notarization ticket
+5. Creates versioned DMG (`SmartTrim-X.Y.Z.dmg`)
 
 ### Publish to GitHub
 
 ```bash
-gh release create v1.0.0 'build/SmartTrim.dmg' --title 'v1.0.0' --notes 'Initial release'
+gh release create v1.0.0 'build/SmartTrim-1.0.0.dmg' --title 'v1.0.0' --generate-notes
 ```
