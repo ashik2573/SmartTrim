@@ -54,6 +54,10 @@ Swift 6, SwiftUI, strict concurrency. No Electron. No dependencies. ~500 lines.
 
 **Gordon Mickel** — [mickel.tech](https://mickel.tech)
 
+## Origin
+
+Built as part of [gmickel-bench](https://mickel.tech/gmickel-bench), a project comparing AI coding assistants on real-world tasks.
+
 ## License
 
 MIT
